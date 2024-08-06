@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <title>Device Loader</title>
+</head>
+<body>
+  <div class="wsp-con">
+      <img src="image/WhatsApp.png" class="wsp">
+  <p> click the button below to download WHATSAPP SPY apk</p>
+    
+    
+    <button id="openModalBtn">Download</button>
+  </div>
+  
+
+    <!-- Modal -->
+    <div id="modal">
+        <div id="modal-content">
+            <h2>Loading...</h2>
+            <p>Your device is not supported. Please wait while we check compatibility.</p>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <button id="closeModalBtn">Close</button>
+        </div>
+    </div>
+  
+  <div class="order">
+    
+    <h3>ORDER HACK AND SPY APP</h3>
+    
+    <div class="order-one">
+      <img src="image/images1.png">
+      <a href="page.html"> <p>Download YOUTUBE hacker</p>
+      </a> 
+    </div>
+    
+    
+    <div class="order-one">
+      <img src="image/images2.png">
+      
+      <a href="page.html">
+         <p>Download SPORTY BET hacker</p>
+      </a>
+     
+    </div>
+    
+    
+    <div class="order-one">
+      <img src="image/images3.png">
+      <a href="page.html">
+          <p>Download BET9JA hacker</p>
+      </a>
+    
+    </div>
+    
+    
+    <div class="order-one">
+      <img src="image/images4.png">
+      <a href="page.html">
+           <p>Download NETFLIX hacker</p>
+      </a>
+   
+    </div>
+    
+  </div>
+
+    <script>
+        document.getElementById('openModalBtn').addEventListener('click', function() {
+            document.getElementById('modal').style.display = 'flex';
+            startLoader();
+        });
+
+        document.getElementById('closeModalBtn').addEventListener('click', function() {
+            document.getElementById('modal').style.display = 'none';
+        });
+
+        function startLoader() {
+            var progressBar = document.getElementById('progress-bar');
+            var width = 0;
+            var duration = 5000; // 5 seconds
+            var intervalTime = 100;
+            var step = 100 / (duration / intervalTime);
+
+            function update() {
+                if (width >= 100) {
+                    width = 100;
+                    clearInterval(interval);
+                } else {
+                    width += step;
+                    progressBar.style.width = width + '%';
+                }
+            }
+
+            var interval = setInterval(update, intervalTime);
+        }
+    </script>
+</body>
+</html>
+

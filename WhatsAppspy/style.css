@@ -1,0 +1,166 @@
+body{
+  height: 100vh;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: green;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.head img{
+  width: 50px;
+  height: 40px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 23px 20px;
+}
+
+.text{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  font-size: 20px;
+}
+img{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  margin: auto;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 24px;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+  background: green;
+  
+}
+
+ /* Style for the button */
+        #openModalBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Modal background */
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+   /* Modal content */
+        #modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Progress container */
+        #progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        /* Progress bar */
+        #progress-bar {
+            width: 0;
+            height: 100%;
+            background-color: #4caf50;
+            transition: width 0.1s ease-in-out;
+        }
+
+    /* Close button */
+        #closeModalBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+.wsp-con{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.wsp{
+  margin: auto;
+  width: 200px;
+}
+
+p{
+  margin: auto;
+}
+
+.order{
+  margin-top: 23px;
+  background: gray;
+  border-radius: 12px;
+  display: flex;
+  padding: 12px 12px;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.order-one{
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+.order-one img{
+  width: 100px;
+}
+
+
